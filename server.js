@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
 	res.send('Running');
 });
 
+app.get('/health', (req, res) => {
+	res.send('OK');
+});
+
 io.on('connection', (socket) => {
 	socket.emit('me', socket.id);
 
