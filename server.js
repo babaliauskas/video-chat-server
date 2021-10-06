@@ -37,4 +37,7 @@ io.on('connection', (socket) => {
 	});
 });
 
+console.log('adasdfafaf');
+
 server.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+// TODO: istrinti
